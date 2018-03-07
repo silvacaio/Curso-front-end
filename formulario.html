@@ -9,11 +9,11 @@
 		 <form method="POST" action="Teste.php"> 
 		 	<div class="form-group">
 		 		<label for="nome">Nome</label>
-		 		<input type="text" name="nome" id="nome" class="form-control" required placeholder="Digite o seu nome">		 		
+		 		<input type="text" name="nome" id="nome" class="form-control" required autofocus tabindex="1" placeholder="Digite o seu nome" disabled>		 		
 		 	</div> 
 		 	<div class="form-group">
 		 		<label for="email">E-mail</label>
-		 		<input type="email" name="email" id="email" class="form-control" required placeholder="seu@email.com">		 		
+		 		<input type="email" name="email" id="email" class="form-control" required placeholder="seu@email.com" tabindex="2" readonly>		 		
 		 	</div>	
 		 	<div class="form-group">
 		 		<label for="nascimento">Nascimento</label>
@@ -45,7 +45,7 @@
 		 	</div>
 		 	<div class="form-group">
 		 		<label for="ano">Ano fabricação</label>
-		 		<input type="number" name="ano" id="ano" step="20" class="form-control">		 		
+		 		<input type="number" name="ano" id="ano" step="20" class="form-control" tabindex="3">		 		
 		 	</div>
 		 	<div class="form-group">
 		 		<label for="cor">Cor</label>
@@ -63,14 +63,65 @@
 		 		<label for="mensagem">Mensagem</label>
 		 		<textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
 		 	</div>
-		 	<div class="form-group">
+		<!--  	<div class="form-group">
 		 		<label for="estados">Estados</label>
-		 		<select name="estados" id="estados" class="form-control">
+		 		<select name="estados" id="estados" multiple size="3" class="form-control">
 		 			<option value="SP">São Paulo</option>
 		 			<option value="MG">Minas</option>
 		 			<option value="RJ" selected>Rio de Janeiro</option>
 		 		</select> 
+		 	</div>	 -->
+		 	<div class="form-group">
+		 		<label for="estados">Estados</label>
+		 		<select name="estados" id="estados" multiple size="3" class="form-control">
+		 			<optgroup label="Sudeste">
+			 			<option value="SP">São Paulo</option>
+			 			<option value="MG">Minas</option>
+			 			<option value="RJ" >Rio de Janeiro</option>
+		 			</optgroup>
+		 			<optgroup label="Sul">
+			 			<option value="PR">Parana</option>
+			 			<option value="RS">Rio Grande do Sul</option>
+		 			</optgroup>
+		 		</select> 
 		 	</div>	
+
+		 	<input type="hidden" name="hidden" value="1">
+
+			<div class="form-group">
+		 		<label for="senha">Senha</label>
+		 		<input type="password" name="senha" id="senha" class="form-control">		 		
+		 	</div>
+
+			<!--Não funciona no firefox -->
+
+			<div class="form-group">
+		 		<label for="mes">Mes</label>
+		 		<input type="month" name="mes" id="mes" class="form-control">		 		
+		 	</div>
+
+		 	<div class="form-group">
+		 		<label for="week">Semana</label>
+		 		<input type="week" name="week" id="week" class="form-control">		 		
+		 	</div>
+
+		 	<!--Não funciona no firefox -->
+
+		 	<div class="form-group">
+		 		<label for="hora">Hora</label>
+		 		<input type="time" name="hora" id="hora" class="form-control">		 		
+		 	</div>
+
+		 	<div class="form-group">
+		 		<input type="text" list="navegadores">
+		 		<datalist id="navegadores">
+		 			<option value="Chrome">
+		 			<option value="Firefox">
+		 			<option value="Safari">
+		 			<option value="Edge">			
+		 		</datalist>
+		 	</div>
+
 		 	<div>
 		 		<button type="submit" class="btn btn-primary">Cadastrar</button>
 		 	</div>	 
