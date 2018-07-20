@@ -475,3 +475,8 @@ footer .list-socials a{
 footer .list-socials i{
 	font-size: 15px;	
 }
+
+video{
+	width: 60%;
+	margin: 0 auto;
+}
