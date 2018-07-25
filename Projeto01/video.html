@@ -3,14 +3,20 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="author" content="Caio Silva">
+	<meta name="viewport" content="width:device-width, initial-scale=1">
+	<!-- Necessario esta meta para deixar o layout responsivo
+	device-width: pega a largura do device
+	initial-scale: abre com zoom de 2 na pagina
+	user-scalable: permite o usuario dar zoom com o dedo, se for "no" é necessario programar isto -->
 	<title>Orlando City</title>
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="lib/plyr/dist/plyr.css">
-	</script>
 	<link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.theme.default.min.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/orlando.css">
+	<link rel="stylesheet" href="css/orlando-mobile.css">
 </head>
 
 <body>
@@ -18,7 +24,6 @@
 		<div class="container">
 			<img id="logotipo" src="img/orlando-logo.png" alt="Logotipo">
 		</div>
-
 		<div class="header-black">
 			<div class="container">
 				<ul class="pull-right">
@@ -142,9 +147,7 @@
 				<div class="row">
 					<div class="player">
 						<video src="mp4/highlights.mp4" controls poster="img/highlights.jpg">
-
 							<track kind="subtitles" label="Português (Brasil)" src="vtt/legendas.vtt" srclang="pt-br" default>
-
 						</video>
 					</div>
 					<input type="range" id="volume" min="0" max="1" step="0.01" value="1">
@@ -152,10 +155,7 @@
 					<button type="button" id="btn-play-pause" class="btn btn-success">PLAY</button>
 					<!-- <video src="mp4/highlights.mp4" controls poster="img/highlights.jpg"></video> -->
 					<!-- <audio src=""></audio> -->
-
-
-
-					<div class="container">
+					<div id="news" class="container" style="top: 0;">
 						<div class="row thumbnails owl-carousel owl-theme">
 							<div class="item" data-video="highlights">
 								<div class="item-inner">
