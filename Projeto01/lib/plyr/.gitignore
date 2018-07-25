@@ -1,11 +1,7 @@
 node_modules
+*.sublime-project
+*.sublime-workspace
 .DS_Store
-credentials.json
+aws.json
+docs/index.dev.html
 *.mp4
-!dist/blank.mp4
-index-*.html
-npm-debug.log
-yarn-error.log
-package-lock.json
-*.webm
-.idea/
