@@ -18,13 +18,40 @@
 
 	<header>
 
+		<div id="menu-mobile-mask" class="visible-xs"></div>
+		<div id="menu-mobile" class="visible-xs">
+			<ul class="list-unstyled">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="video.html">Videos</a>
+				</li>
+				<li>
+					<a href="#">Tickets</a>
+				</li>
+				<li>
+					<a href="#">News</a>
+				</li>
+				<li>
+					<a href="#">Schedule</a>
+				</li>
+			</ul>
+
+			<div class="bar-close">
+				<button type="button" class="btn btn-close">
+					<i class="fa fa-times"></i>
+				</button>
+			</div>
+		</div>
+
 		<div class="container container-logo">
 			<img id="logotipo" src="img/orlando-logo.png" alt="Logotipo">
 		</div>
 
 		<div class="header-black">
 			<div class="container">
-
+				<input type="search" id="input-search-mobile" class="visible-xs" placeholder="search...">
 				<button id="btn-bars" type="button">
 					<i class="fa fa-bars"></i>
 				</button>
@@ -332,25 +359,42 @@
 									<a href="tel:5499999999">
 										<i class="fa fa-phone"></i>5499999999</a>
 								</p>
+								<div class="row-fluid visible-xs action-buttons">
+									<div class="col-xs-6">
+										<a href="#" class="btn btn-footer ">
+											<i class="fa fa-map-marker-alt"></i>Location</i>
+										</a>
+									</div>
+									<div class="col-xs-6">
+										<a href="#" class="btn btn-footer">
+											<i class="fa fa-phone"></i>Call</i>
+										</a>
+									</div>
+								</div>
 								<ul class="list-unstyled list-socials">
 									<li>
-										<a href="#">
+										<a href="#" target="_blank">
 											<i class="fab fa-facebook-f"></i>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#" target="_blank">
 											<i class="fab fa-instagram"></i>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#" target="_blank">
 											<i class="fab fa-twitter"></i>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="#" target="_blank">
 											<i class="fab fa-whatsapp"></i>
+										</a>
+									</li>
+									<li class="btn-up">
+										<a href="#" id="page-up" target="_blank">
+											<i class="fa fa-chevron-up"></i>
 										</a>
 									</li>
 								</ul>
